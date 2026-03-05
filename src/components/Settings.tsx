@@ -34,7 +34,7 @@ export function Settings({ settings, setSettings, onSave, onTestNotification }: 
         multiple: false,
         filters: field === 'soundPath' 
           ? [{ name: 'Audio', extensions: ['mp3', 'wav', 'ogg'] }]
-          : [{ name: 'Image', extensions: ['jpg', 'png', 'jpeg', 'webp'] }]
+          : [{ name: 'Image', extensions: ['jpg', 'png', 'jpeg', 'webp', 'gif'] }]
       });
       if (selected && typeof selected === 'string') {
         // Backup file to app data directory
